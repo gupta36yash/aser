@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+
+    background-image: url('background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 20px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+header h1, header p {
+    margin: 10px 0;
+}
+
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.recording {
+    background-color: red;
+    color: white;
+}
+
+button.uploaded {
+    background-color: darkblue;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#jsonData {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.key-value {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.key {
+    font-weight: bold;
+}
+
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    position: relative;
+}
+.content-wrapper {
+    text-align: center;
+}
+
+#record-button img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.emotions {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+.emotions div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.emotions img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.emotion-percentage {
+    color: #ffffff;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+footer p {
+    margin: 0;
+}
